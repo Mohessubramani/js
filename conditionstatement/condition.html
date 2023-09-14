@@ -1,0 +1,47 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div>
+            <input id="value_1"placeholder="input_1" class="output" ><br><br>
+            <input id="value_2"placeholder="input_2" class="output"><br><br>
+            <input id="value_3"placeholder="input_3" class="output"><br><br>
+            <button class="btn" onclick="getinput()">submit</button><br><br>
+            <input id="output"placeholder="ANS" class="output"><br><br>
+        </div>
+    </body>
+    <script>
+        const doc=document.getElementsByClassName("output")
+        doc[0].style.backgroundColor="orange";
+        doc[1].style.backgroundColor="yellow";
+        doc[2].style.backgroundColor="skyblue";
+        doc[3].style.backgroundColor="pink";
+
+
+
+
+        // const docTag=document.getElementsByTagName("output")
+
+        var value_1,value_2,value_3;
+        function getinput(){ 
+        value_1=Number(document.getElementById("value_1").value);
+        value_2=Number(document.getElementById("value_2").value);
+        value_3=Number(document.getElementById("value_3").value);
+        const doc=document.getElementById("output");
+        if (value_1> value_2){
+            doc.value=value_1;
+        }
+        else if(value_2=value_3){
+            doc.value=value_2
+
+        }
+        
+        else {
+            doc.value=value_2;
+        }
+
+        }
+
+    </script>
+</html>

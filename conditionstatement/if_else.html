@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <h1>conditional statements</h1>
+    </head>
+    <script>
+        function age() {
+            if(document.getElementById("voter").value>=18){
+                //window.alert("eligible for vote")
+                document.writeln("eligibe for vote")
+            }
+            else{
+                //window.alert("Not eligible for vote")
+                document.writeln("Not  eligible for votimg")
+            }
+        }
+    </script>
+    <body>
+        <h2>ENTER THE NAME:<input type="text" id="voter"></h2>
+        <button type="button" onclick="age()">VERIFY</button>
+    </body>
+</html>
